@@ -1,0 +1,13 @@
+print("STUDENT PROFILE GENERATOR")
+name=input("Enter your full name")
+name=name.strip()
+print("====student details====")
+print("original name:",name)
+print("name in uppercase:",name.upper())
+print("name in lowercase:",name.lower())
+print("name in titlecase:",name.title())
+print("number of characters:",len(name))
+message="i am learning java"
+new_message=message.replace("java","python")
+print("old message:",message)
+print("new_message:",new_message)
