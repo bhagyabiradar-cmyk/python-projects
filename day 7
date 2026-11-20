@@ -1,0 +1,16 @@
+print("===Python Daily Practice Tracker====")
+print("/n ----- practice sessions-----")
+for session in range(1,7):
+ if session==3:
+    print("session 3: take a short break")
+    continue
+ if session==6:
+    print("session limit has reached")
+    break
+print("session",session,":practice python")
+print("/n ---- revision times----")
+revision=1
+while revision<=3:
+   print("revision round:",revision)
+   revision+=1
+   print("todays practice completed")
