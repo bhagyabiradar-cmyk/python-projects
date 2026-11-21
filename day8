@@ -1,0 +1,12 @@
+print("Student Marks Manager:")
+marks=[78,85,69]
+print("Original marks:",marks)
+marks.append(69)
+print("After adding marks:",marks)
+marks.remove(69)
+print("After removing marks:",marks)
+marks.sort()
+print("Sorted marks:",marks)
+print("First marks:",marks[0])
+print("Total subjects:",len(marks))
+print("Total marks:",sum(marks))
