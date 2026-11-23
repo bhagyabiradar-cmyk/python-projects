@@ -1,0 +1,30 @@
+print("STUDENT MARKS CALCULATOR")
+
+student_name = "Bhagya"
+marks = [78, 85, 69, 90]
+
+def calculate_total(marks):
+    total = sum(marks)
+    return total
+
+def calculate_average(total, subjects):
+    average = total / subjects
+    return average
+
+def check_result(average):
+    if average >= 40:
+        status = "Pass"
+    else:
+        status = "Fail"
+
+    return status
+
+total = calculate_total(marks)
+average = calculate_average(total, len(marks))
+result = check_result(average)
+
+print("Student:", student_name)
+print("Marks:", marks)
+print("Total:", total)
+print("Average:", round(average, 2))
+print("Result:", result)
