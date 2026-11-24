@@ -1,0 +1,23 @@
+print("SHOPPING BILL CALCULATOR")
+prices=[120,80,50]
+def calculate_total(prices_list):
+    total=0
+    for price in prices_list:
+        total=total+price
+    return total
+def calculate_discount(total):
+    if total>200:
+        discount=total*0.10
+    else:
+
+        discount=0
+    return discount
+def show_bill(items):
+    total=calculate_total(items)
+    discount=calculate_discount(total)
+    final_amount=total-discount
+    print("Total Amount:",total)
+    print("Discount:",discount)
+    print("Final Amount to be paid:",final_amount)
+    show_bill(prices)
+    
