@@ -1,0 +1,21 @@
+print("STUDENT MARKS ANALYSER")
+
+# Original marks
+marks = [45, 80, 32, 90, 65, 25, 75]
+
+print("All Marks:", marks)
+
+# List comprehension
+passed_students = [mark for mark in marks if mark >= 35]
+
+print("Passed Marks:", passed_students)
+
+# Find failed students
+failed_students = [mark for mark in marks if mark < 35]
+
+print("Failed Marks:", failed_students)
+
+# Increase every student's marks by 5
+updated_marks = [mark + 5 for mark in marks]
+
+print("Updated Marks:", updated_marks)
