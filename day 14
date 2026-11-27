@@ -1,0 +1,39 @@
+print("STUDENT GRADE MANAGEMENT SYSTEM")
+
+def calculate_average(marks):
+    total = 0
+
+    for mark in marks:
+        total = total + mark
+
+    average = total / len(marks)
+    return average
+
+
+def check_grade(average):
+    if average >= 90:
+        return "A Grade"
+    elif average >= 75:
+        return "B Grade"
+    elif average >= 50:
+        return "C Grade"
+    else:
+        return "Fail"
+
+
+student_name = input("Enter student name: ")
+
+marks = []
+
+for i in range(3):
+    mark = int(input("Enter subject marks: "))
+    marks.append(mark)
+
+average = calculate_average(marks)
+grade = check_grade(average)
+
+print("\nSTUDENT REPORT")
+print("Name:", student_name)
+print("Marks:", marks)
+print("Average:", average)
+print("Grade:", grade)
